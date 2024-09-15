@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import './Carousel.css'
 import image1 from './Images/img1.jpg';
 import img2 from './Images/img2.jpg';
 import img3 from './Images/img3.jpg'
@@ -10,14 +11,14 @@ function DarkVariantExample() {
     
     <Carousel data-bs-theme="dark">
       
-      <Carousel.Item style={{width:1349, height:600}}>
+      <Carousel.Item className='photo1' style={{width:1349, height:600}}>
         <img className="d-block w-100" src={image1} alt="first imange" />
         <Carousel.Caption>
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{width:1349, height:600}}>
+      <Carousel.Item className='photo2' style={{width:1349, height:600}}>
         <img
           className="d-block w-100"
           src={img2}
@@ -28,7 +29,7 @@ function DarkVariantExample() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{width:1349, height:600}}>
+      <Carousel.Item className='photo3' style={{width:1349, height:600}}>
         <img
           className="d-block w-100"
           src={img3}
@@ -41,7 +42,7 @@ function DarkVariantExample() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{width:1349, height:600}}>
+      <Carousel.Item className='photo4' style={{width:1349, height:600}}>
         <img
           className="d-block w-100"
           src={img4}

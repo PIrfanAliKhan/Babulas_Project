@@ -1,0 +1,8 @@
+.photo1 {
+    position: relative;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .photo1 img {
+    position: absolute;
+  }

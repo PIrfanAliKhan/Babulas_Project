@@ -1,46 +1,21 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Navbar.css'
+import React from "react";
+import "./Navbar.css";
 
-function NavScrollExample() {
+const Navbar = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" >
-      <Container fluid className="navclass"  >
-        <Navbar.Brand href="#">AISLIN</Navbar.Brand>
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#home">Home</Nav.Link>
-            <NavDropdown title="Projects" id="Projectsdropdoun">
-              <NavDropdown.Item href="#Project1">Project 1</NavDropdown.Item>
-              <NavDropdown.Item href="#Project2">
-                Project2
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#contact" >Contact us</Nav.Link>
-            
-            
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar">
+      <div className="navbar-brand">
+        <h1>AISLIN</h1>
+      </div>
+      <ul className="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   );
-}
+};
 
-export default NavScrollExample;
+export default Navbar;

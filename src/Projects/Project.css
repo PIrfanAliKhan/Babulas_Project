@@ -1,25 +1,56 @@
-.projects{
+.projects {
     background-color: aqua;
-}
-
-.project1 p{
-    text-align: left; 
-    display: inline-block;
-}
-.project1 img {
-    display: inline-block;
-}
-.project1 {
-    display: inline-block;
-}
-
-.project2 img {
-    display: inline-block;
-}
-.project2 p{
-    display: inline-block;
-}
-
-.project2 {
-    display: inline-block;
-}
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Adds space between project sections */
+  }
+  
+  .project1, .project2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .project1 .image-box, .project2 .image-box {
+    width: 40%; /* Image box takes 40% of the row */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white; /* Adds a background to make the image stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project1 .text-box, .project2 .text-box {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white; /* Adds a background to separate the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project1 img, .project2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project1 p, .project2 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .project1, .project2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project1 .image-box, .project2 .image-box {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }

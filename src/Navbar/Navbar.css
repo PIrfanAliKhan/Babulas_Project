@@ -1,5 +1,49 @@
-.navclass{
-    background-color: rgb(6, 6, 126);
-    margin: 0%;
-    color: rgb(12, 211, 211);
-}
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: navy;
+    
+    color: rgb(241, 238, 238);
+  }
+  
+  .navbar-brand h1 {
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .nav-links {
+    padding-right: 5rem;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    text-decoration: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links a:hover {
+    color: #ddd;
+    transition: 0.3s;
+  }
+  
+  /* Responsive behavior for mobile screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  }
+  

@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar';
 import Carousel from './Carousel/Carousel';
 import Projects from './Projects/Projects';
 import Aboutus from './Aboutus/Aboutus';
+import Contactus from './ContactUs/Contactus';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Aboutus/>
       <Carousel/>
       <Projects/>
+      <Contactus/>
     </div>
   );
 }
