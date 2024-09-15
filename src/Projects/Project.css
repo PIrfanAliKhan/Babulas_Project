@@ -1,0 +1,25 @@
+.projects{
+    background-color: aqua;
+}
+
+.project1 p{
+    text-align: left; 
+    display: inline-block;
+}
+.project1 img {
+    display: inline-block;
+}
+.project1 {
+    display: inline-block;
+}
+
+.project2 img {
+    display: inline-block;
+}
+.project2 p{
+    display: inline-block;
+}
+
+.project2 {
+    display: inline-block;
+}
