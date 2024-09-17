@@ -23,3 +23,15 @@
     max-width: 100%;
     height: auto;
   }
+
+  .service1 .servicetext1, .service2 .servicetext2 {
+    flex: 1;
+    padding: 1rem;
+    background-color: white; 
+  }
+
+  .service1 p, .service2 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
