@@ -1,8 +1,6 @@
-.photo1 {
-    position: relative;
-    text-align: center;
-    padding-top: 25px;
-  }
-  .photo1 img {
+.d-block{
     position: absolute;
-  }
+    width: 100%;
+    height: 45rem;
+  
+}

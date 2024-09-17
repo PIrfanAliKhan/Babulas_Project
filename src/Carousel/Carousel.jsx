@@ -46,7 +46,7 @@ function DarkVariantExample() {
         <img
           className="d-block w-100"
           src={img4}
-          alt="fourth image"
+          alt="fourth_image"
         />
         <Carousel.Caption>
           <h5>fourth label</h5>

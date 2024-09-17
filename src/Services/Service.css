@@ -1,0 +1,25 @@
+.servises {
+    background-color: rgb(184, 9, 18);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Adds space between project sections */
+  }
+  
+  .service1, .service2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .service1 .serviceimage1, .service2 .serviceimage2{
+    width: 40%; /* Image box takes 40% of the row */
+    padding: 1rem;
+    background-color: white; 
+  }
+
+  .service1 img, .service2 img {
+    max-width: 100%;
+    height: auto;
+  }

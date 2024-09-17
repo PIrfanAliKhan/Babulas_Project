@@ -1,0 +1,15 @@
+.contact{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+background-color: navy;
+color: rgb(241, 238, 238);
+
+}
+.contactleft .contactright{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
