@@ -6,17 +6,16 @@
     gap: 2rem; /* Adds space between project sections */
   }
   
-  .service1, .service2 {
+  .service1, .service2 {  
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
   }
 
   .service1 .serviceimage1, .service2 .serviceimage2{
     width: 40%; /* Image box takes 40% of the row */
     padding: 1rem;
-    background-color: white; 
   }
 
   .service1 img, .service2 img {
@@ -24,14 +23,4 @@
     height: auto;
   }
 
-  .service1 .servicetext1, .service2 .servicetext2 {
-    flex: 1;
-    padding: 1rem;
-    background-color: white; 
-  }
-
-  .service1 p, .service2 p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-  }
+  
