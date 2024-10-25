@@ -12,8 +12,9 @@ function Services() {
             <div className="servicetext1"><h3>write about services</h3></div>
             </div>
             <div className="service2">
-            <div className="serviceimage2"><img src={Image2} alt="sample_image" /></div>
             <div className="servicetext2"><h3>write about services</h3></div>
+            <div className="serviceimage2"><img src={Image2} alt="sample_image" /></div>
+            
             </div>
         </div>
     </div>
