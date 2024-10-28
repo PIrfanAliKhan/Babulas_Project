@@ -34,7 +34,6 @@
   .project1 img, .project2 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
   }
   
   .project1 p, .project2 p {
