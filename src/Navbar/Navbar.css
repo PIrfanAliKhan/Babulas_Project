@@ -5,13 +5,12 @@
     align-items: center;
     background-color: navy;
     
-    color: rgb(241, 238, 238);
   }
   
   .navbar-brand h1 {
     padding-left: 2rem;
     font-size: 2rem;
-    color: #fff;
+    color: goldenrod;
   }
   
   .nav-links {
@@ -26,13 +25,13 @@
   }
   
   .nav-links a {
-    color: white;
+    color: goldenrod;
     text-decoration: none;
     font-size: 1.7rem;
   }
   
   .nav-links a:hover {
-    color: #ddd;
+    color: goldenrod;
     transition: 0.3s;
   }
   

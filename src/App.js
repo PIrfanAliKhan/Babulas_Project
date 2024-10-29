@@ -15,8 +15,8 @@ function App() {
     {/* <Router> */}
     <div className="App">
       <Navbar />
-      <Aboutus/>
       <Carousel/>
+      <Aboutus/>
       <Projects/>
       <Services/>
       <Contactus/>

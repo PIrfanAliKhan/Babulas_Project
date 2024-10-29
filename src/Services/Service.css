@@ -1,16 +1,14 @@
 .servises {
-    background-color: rgb(97, 94, 94);
-    padding: 2rem;
+    /* background-color: navy; */
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Adds space between project sections */
+    color: rgb(65, 65, 9);
   }
   
   .service1, .service2 {  
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
   }
 
   .service1 .serviceimage1, .service2 .serviceimage2{

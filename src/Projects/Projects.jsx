@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import pic1 from './Projectimages/img3.jpg';
 import pic2 from './Projectimages/img4.jpg';
 import './Project.css';
@@ -6,21 +6,19 @@ import './Project.css';
 const Projects = () => {
   return (
     <div className="projects">
-      <div className="project1">
-        <div className="image-box">
-          <img src={pic1} alt="Image 1 of the project" />
-        </div>
-        <div className="text-box">
-          <p>Write about this project.</p>
+      <div className="card">
+        <img className="card-image" src={pic1} alt="Project Image 1" />
+        <div className="card-content">
+          <h3 className="card-title">Project Title 1</h3>
+          <p className="card-description">Write about this project.</p>
         </div>
       </div>
 
-      <div className="project2">
-        <div className="image-box">
-          <img src={pic2} alt="Image 2 of the project" />
-        </div>
-        <div className="text-box">
-          <p>Write some matter.</p>
+      <div className="card">
+        <img className="card-image" src={pic2} alt="Project Image 2" />
+        <div className="card-content">
+          <h3 className="card-title">Project Title 2</h3>
+          <p className="card-description">Write some matter.</p>
         </div>
       </div>
     </div>

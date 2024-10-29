@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     background-color: navy;
-    color: #fff;
+    color: goldenrod;
 }
 
 .contact-left, .contact-right {
@@ -17,17 +17,17 @@
 .contact-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ccc;
+    color: goldenrod;
 }
 
 .contact-brand {
     font-size: 2rem;
     margin: 0.5rem 0;
-    color: #fff;
+    color: goldenrod;
 }
 
 .contact-slogan {
-    color: #fff;
+    color: goldenrod;
 }
 
 .contact-right {
@@ -44,12 +44,12 @@
 
 .contact-label {
     font-weight: bold;
-    color: #e0e0e0;
+    color: goldenrod;
 }
 
 .contact-info {
     font-size: 1rem;
-    color: #f1eeee;
+    color: goldenrod;
 }
 
 /* Responsive Design */
@@ -57,6 +57,6 @@
     .contact {
         flex-direction: row;
         justify-content: space-between;
-        padding: 3rem 5rem;
+        padding: 1rem 10rem;
     }
 }
