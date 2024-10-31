@@ -9,7 +9,7 @@ import img4 from './Images/img4.jpg'
 function DarkVariantExample() {
   return (
     
-    <Carousel data-bs-theme="dark">
+    <Carousel data-bs-theme="dark" id='home'>
       
       <Carousel.Item className='photo1' style={{width:1349, height:600}}>
         <img className="d-block w-100" src={image1} alt="first imange" />

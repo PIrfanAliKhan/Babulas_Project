@@ -5,7 +5,7 @@ import './Project.css';
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="card">
         <img className="card-image" src={pic1} alt="Project Image 1" />
         <div className="card-content">

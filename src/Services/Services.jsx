@@ -6,7 +6,7 @@ import './Service.css'
 function Services() {
   return (
     <div>
-        <div className="servises">
+        <div className="servises" id="services">
             <div className="service1">
             <div className="serviceimage1"><img src={Image1} alt="sample_image" /></div>
             <div className="servicetext1"><h3>write about services</h3></div>

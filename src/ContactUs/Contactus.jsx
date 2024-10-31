@@ -4,7 +4,7 @@ import './Contact.css';
 
 function Contactus() {
   return (
-    <div className='contact'>
+    <div className='contact' id="contact">
       <div className="contact-left">
         <p className="contact-title"><h2>CONTACT</h2></p>
         <h2 className="contact-brand">AISLIN</h2>
