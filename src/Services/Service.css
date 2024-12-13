@@ -1,24 +1,33 @@
 .servises {
-    /* background-color: navy; */
-    display: flex;
-    flex-direction: column;
-    color: rgb(65, 65, 9);
-  }
-  
-  .service1, .service2 {  
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* background-color: navy; */
+  display: flex;
+  flex-direction: column;
+  color: rgb(65, 65, 9);
+}
+
+.service1, .service2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service1 .serviceimage1, .service2 .serviceimage2 {
+  width: 40%; /* Image box takes 40% of the row */
+  padding: 1rem;
+}
+
+.service1 img, .service2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .service1, .service2 {
+      flex-direction: column;
   }
 
-  .service1 .serviceimage1, .service2 .serviceimage2{
-    width: 40%; /* Image box takes 40% of the row */
-    padding: 1rem;
+  .service1 .serviceimage1, .service2 .serviceimage2 {
+      width: 100%; /* Full width on small screens */
   }
-
-  .service1 img, .service2 img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  
+}

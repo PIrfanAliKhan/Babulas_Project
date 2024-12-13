@@ -1,5 +1,13 @@
-.caption{
+.caption {
     /* background-color: navy; */
     margin: 7px;
     color: rgb(65, 65, 9);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .caption {
+        font-size: 0.9rem;
+        margin: 5px;
+    }
 }
