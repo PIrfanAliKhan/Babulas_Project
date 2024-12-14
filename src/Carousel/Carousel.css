@@ -2,21 +2,20 @@
 .d-block {
     width: 100%;
     height: 30rem; /* Default height for large screens */
-    object-fit: cover; /* Ensures images scale proportionally without stretching */
-    position: relative;
+    object-fit: cover;
   }
   
   /* Medium screens (tablets) */
   @media (max-width: 768px) {
     .d-block {
-      height: 25rem; /* Further increased height for tablets */
+      height: 25rem;
     }
   }
   
   /* Small screens (mobile devices) */
   @media (max-width: 576px) {
     .d-block {
-      height: 22rem; /* Further increased height for small screens */
+      height: 20rem;
     }
   }
   
