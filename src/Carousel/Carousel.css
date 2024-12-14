@@ -3,10 +3,31 @@
     width: 100%;
     height: 45rem;
 }
-
+/* Base carousel image style */
+.d-block {
+    width: 100%;
+    height: 45rem; /* Default height for large screens */
+    object-fit: cover; /* Ensures the images are resized proportionally and fully cover the container */
+    position: relative;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .d-block {
+      height: 25rem; /* Reduce the height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .d-block {
+      height: 20rem; /* Further reduce height for very small screens */
+    }
+  }
+  
 /* Mobile view adjustments */
 @media (max-width: 768px) {
     .d-block {
+        width: 100%;
         height: 50rem; /* Adjust the height for smaller screens */
     }
 }

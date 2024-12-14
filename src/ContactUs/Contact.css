@@ -1,66 +1,101 @@
+/* General styles for contact section */
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: navy;
     color: goldenrod;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    gap: 1.5rem;
 }
 
-.contact-left, .contact-right {
+/* Left Section */
+.contact-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .contact-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: goldenrod;
 }
 
 .contact-brand {
     font-size: 2rem;
+    font-weight: bold;
     margin: 0.5rem 0;
     color: goldenrod;
 }
 
 .contact-slogan {
-    color: goldenrod;
+    font-size: 1rem;
+    font-style: italic;
+    color: #f9d55e; /* Lighter golden color for contrast */
 }
 
+/* Right Section */
 .contact-right {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
 .contact-detail {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
+    font-size: 1rem;
+    flex-wrap: wrap;
 }
 
 .contact-label {
     font-weight: bold;
-    color: goldenrod;
+    color: #f9d55e; /* Lighter golden color for emphasis */
 }
 
 .contact-info {
     font-size: 1rem;
-    color: goldenrod;
+    color: white;
+    word-break: break-word;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
     .contact {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem 10rem;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .contact-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-brand {
+        font-size: 1.8rem;
+    }
+
+    .contact-slogan {
+        font-size: 0.9rem;
+    }
+
+    .contact-detail {
+        font-size: 0.9rem;
     }
 }
 
-/* Mobile view adjustments */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    .contact {
+        padding: 1rem;
+    }
+
     .contact-title {
         font-size: 1rem;
     }
@@ -69,7 +104,11 @@
         font-size: 1.5rem;
     }
 
-    .contact-info {
-        font-size: 0.9rem;
+    .contact-slogan {
+        font-size: 0.8rem;
+    }
+
+    .contact-detail {
+        font-size: 0.8rem;
     }
 }

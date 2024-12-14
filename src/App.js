@@ -21,19 +21,6 @@ function App() {
       <Services/>
       <Contactus/>
       
-      {/* <link to="">Navbar</link>
-      <link to="/projects">Projects</link>
-      <link to="/services">Services</link>
-      <link to="/contact">ContactUs</link>
-    
-        <Routes>
-          <Route path='' element={<Navbar/>}></Route>
-          <Route path='/projects' element={<Projects/>}></Route>
-          <Route path='/services' element={<Services/>}></Route>
-          <Route path='/contact'element={<Contactus/>}></Route>
-        </Routes>
-      
-    </Router> */}
     </div>
     </>
   );
