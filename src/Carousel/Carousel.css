@@ -1,21 +1,21 @@
 /* Base carousel image style for all screen sizes */
 .d-block {
-    width: 100%;
-    height: 30rem; /* Default height for large screens */
-    object-fit: cover;
+  width: 100%;
+  height: 30rem; /* Default height for large screens */
+  object-fit: cover;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .d-block {
+      height: 35rem; /* Increased height for tablets */
   }
-  
-  /* Medium screens (tablets) */
-  @media (max-width: 768px) {
-    .d-block {
-      height: 25rem;
-    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 576px) {
+  .d-block {
+      height: 100vh; /* Take up full viewport height on mobile */
+      max-height: 50rem; /* Optional: Prevent excessive height */
   }
-  
-  /* Small screens (mobile devices) */
-  @media (max-width: 576px) {
-    .d-block {
-      height: 20rem;
-    }
-  }
-  
+}

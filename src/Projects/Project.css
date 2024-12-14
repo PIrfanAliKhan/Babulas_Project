@@ -1,9 +1,17 @@
+.project{
+  background-color: navy;
+}
+.heading{
+  color: #fff;
+}
 .projects {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  padding: 2rem;
-  /* background-color: navy; */
+  padding-top: 0rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 .card {

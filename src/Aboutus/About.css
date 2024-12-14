@@ -1,13 +1,81 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Caption Container Styling */
 .caption {
-    /* background-color: navy; */
-    margin: 7px;
-    color: rgb(65, 65, 9);
+    text-align: center; /* Center-align text */
+    color: #333; /* Dark gray text for readability */
+    font-family: 'Poppins', sans-serif; /* Elegant modern font */
+    background: linear-gradient(to right, #f0f0f0, #d6e4e9); /* Subtle gradient background */
+    border-radius: 10px; /* Rounded corners for softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit the maximum width for large screens */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Mobile view adjustments */
+/* Main Paragraph (h3) Styling */
+.caption h3 {
+    font-size: 1.4rem;
+    font-weight: 400; /* Normal weight for the paragraph */
+    color: #555; /* Softer text color */
+    line-height: 1.8; /* Better line spacing */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for a more dynamic effect */
+}
+
+/* Highlighted Text in Paragraph */
+.caption h3 strong {
+    color: #ff7f50; /* Coral color for emphasis */
+    font-weight: 600; /* Bold for emphasis */
+}
+
+/* Title (h1) Styling */
+.caption h1 {
+    font-size: 3.2rem;
+    font-weight: 700; /* Bold and impactful */
+    text-transform: uppercase;
+    color: #1a1a1a; /* Deep black for clarity */
+    letter-spacing: 1.8px; /* Increased letter spacing for elegance */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Subtitle (h2) Styling */
+.caption h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #ff7f50; /* Same coral color for consistency */
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Mobile View Adjustments */
 @media (max-width: 768px) {
-    .caption {
-        font-size: 0.9rem;
-        margin: 5px;
+    .caption h3 {
+        font-size: 1.3rem;
+    }
+
+    .caption h1 {
+        font-size: 2.4rem;
+    }
+
+    .caption h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Extra Small Mobile View */
+@media (max-width: 480px) {
+    .caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .caption h1 {
+        font-size: 2.2rem;
+    }
+
+    .caption h2 {
+        font-size: 1.5rem;
     }
 }

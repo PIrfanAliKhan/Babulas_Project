@@ -1,33 +1,70 @@
+/* Overall Services Section Styling */
 .servises {
-  /* background-color: navy; */
   display: flex;
   flex-direction: column;
-  color: rgb(65, 65, 9);
+  color: rgb(233, 233, 225);
+  background-color: chocolate;
+  padding: 1.5rem 2rem; /* Reduced top padding and slight bottom padding */
+  padding-bottom: 1rem; /* Reduced bottom padding */
 }
 
+/* Service Box Styling */
 .service1, .service2 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 2rem; /* Space between service blocks */
+  flex-wrap: wrap; /* Allow wrapping of elements for better mobile view */
 }
 
-.service1 .serviceimage1, .service2 .serviceimage2 {
-  width: 40%; /* Image box takes 40% of the row */
+.serviceimage1, .serviceimage2 {
+  width: 45%; /* Image box takes 45% of the row */
   padding: 1rem;
+  border-radius: 8px; /* Rounded corners for images */
 }
 
 .service1 img, .service2 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+  object-fit: cover;
 }
 
-/* Mobile view adjustments */
+/* Text Styling */
+.servicetext1, .servicetext2 {
+  width: 45%; /* Text box takes 45% of the row */
+  padding: 1rem;
+}
+
+.servicetext1 h3, .servicetext2 h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff; /* White text for better contrast */
+  text-align: center;
+  line-height: 1.6;
+  padding: 0.5rem 0; /* Adjust padding around text */
+}
+
+/* Mobile view styling */
 @media (max-width: 768px) {
   .service1, .service2 {
-      flex-direction: column;
+    flex-direction: column; /* Stack the image and text vertically on mobile */
+    align-items: center; /* Center align the items */
   }
 
-  .service1 .serviceimage1, .service2 .serviceimage2 {
-      width: 100%; /* Full width on small screens */
+  .serviceimage1, .serviceimage2 {
+    width: 80%; /* Increase image width on mobile */
+    padding: 0.5rem; /* Less padding for smaller screens */
+  }
+
+  .servicetext1, .servicetext2 {
+    width: 80%; /* Text also takes up more width on mobile */
+    padding: 0.5rem;
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .servicetext1 h3, .servicetext2 h3 {
+    font-size: 1.4rem; /* Smaller text size on mobile */
+    padding: 0.5rem 0; /* Less padding around text */
   }
 }

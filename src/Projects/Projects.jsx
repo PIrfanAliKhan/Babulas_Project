@@ -5,9 +5,11 @@ import './Project.css';
 
 const Projects = () => {
   return (
+    <div className='project'>
+    <div className='heading'><h1>My work</h1></div>
     <div className="projects" id="projects">
       <div className="card">
-        <img className="card-image" src={pic1} alt="Project Image 1" />
+        <img className="card-image" src={pic1} alt="" />
         <div className="card-content">
           <h3 className="card-title">Project Title 1</h3>
           <p className="card-description">Write about this project.</p>
@@ -15,12 +17,13 @@ const Projects = () => {
       </div>
 
       <div className="card">
-        <img className="card-image" src={pic2} alt="Project Image 2" />
+        <img className="card-image" src={pic2} alt="" />
         <div className="card-content">
           <h3 className="card-title">Project Title 2</h3>
           <p className="card-description">Write some matter.</p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
